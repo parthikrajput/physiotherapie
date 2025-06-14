@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  img {
+    @apply w-full h-auto object-cover;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  body {
+    @apply font-poppins_sans text-p;
+  }
+
+  .gradient_text {
+    @apply bg-clip-text text-transparent bg-gradient-text;
+  }
+
+  li {
+    @apply list-none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-ambit_sans;
+  }
+
+  nav ul li a {
+    @apply text-black-light hover:gradient_text transition-all duration-300 ease-in-out;
+  }
+
+  .b-btn {
+    @apply hover:text-white gradient_text uppercase w-fit hover:bg-b-gradient py-3 px-8 flex items-center transition-all duration-300 ease-linear hover:bg-clip-unset;
+  }
+
+  .btn {
+    @apply text-white hover:gradient_text uppercase w-fit bg-b-gradient py-3 px-8 flex items-center transition-all duration-300 ease-linear;
+  }
+
+  .btn-box {
+    @apply w-fit h-fit btn-b-box border-2 hover-border-gradient rounded-lg overflow-hidden;
+  }
+
+  li:not(nav ul li, .f-fild li) {
+    @apply pl-[36px] relative text-p text-black-text_light after:content-[''] after:absolute after:left-0 after:top-0 after:bg-li_icon after:w-[20px] after:h-[27px];
+  }
+
+  .logo-slider .owl-dots,
+  .service-slider .owl-dots {
+    @apply flex items-center gap-2 flex-wrap justify-center pt-5;
+  }
+
+  .service-slider .owl-dots {
+    @apply flex 2xl:hidden;
+  }
+
+  .logo-slider .owl-dot span,
+  .service-slider .owl-dot span {
+    @apply w-3 h-3 bg-gray-light rounded-full inline-block;
+  }
+
+  .logo-slider .owl-dot.active span,
+  .service-slider .owl-dot.active span {
+    @apply bg-gray;
+  }
+
+  .team h3 {
+    @apply pl-[36px] relative after:content-[''] after:absolute after:left-0 after:top-0 after:bg-team_icon after:w-[26px] after:h-[33px];
+  }
+
+  .team-slider .owl-nav,
+  .service-slider .owl-nav,
+  .light-box-slider .owl-nav {
+    @apply !block;
+  }
+
+  .team-slider button.owl-prev,
+  .team-slider button.owl-next,
+  .service-slider button.owl-prev,
+  .service-slider button.owl-next,
+  .light-box-slider button.owl-prev,
+  .light-box-slider button.owl-next {
+    @apply !bg-white/10 w-16 h-16 !p-4 top-1/2 absolute transform -translate-y-1/2;
+  }
+
+  .service-slider button.owl-prev,
+  .service-slider button.owl-next {
+    @apply !border !border-black/20 !bg-white/10 !border-solid;
+  }
+
+  .light-box-slider button.owl-prev,
+  .light-box-slider button.owl-next {
+    @apply !bg-black/30 rounded-sm;
+  }
+
+  .team-slider button.owl-prev span,
+  .team-slider button.owl-next span,
+  .service-slider button.owl-prev span,
+  .service-slider button.owl-next span,
+  .light-box-slider button.owl-prev span,
+  .light-box-slider button.owl-next span {
+    @apply relative after:content-[''] after:bg-right_arrow after:bg-cover after:w-8 after:h-8 text-0 after:absolute flex items-center justify-center after:bg-no-repeat;
+  }
+
+  .team-slider button.owl-prev span,
+  .light-box-slider button.owl-prev span {
+    @apply after:bg-left_arrow;
+  }
+
+  .service-slider button.owl-prev span {
+    @apply after:bg-left_arrow_black;
+  }
+
+  .service-slider button.owl-next span {
+    @apply after:bg-right_arrow_black;
+  }
+
+  .team-slider button.owl-next,
+  .service-slider button.owl-next {
+    @apply rounded-tl-sm rounded-bl-sm right-0;
+  }
+
+  .service-slider button.owl-next {
+    @apply 3xl:-right-20 right-0 rounded-none 2xl:block hidden;
+  }
+
+  .light-box-slider button.owl-next {
+    @apply 3xl:-right-20 right-3;
+  }
+
+  .team-slider button.owl-prev,
+  .service-slider button.owl-prev {
+    @apply rounded-tr-sm rounded-br-sm left-0;
+  }
+
+  .service-slider button.owl-prev {
+    @apply 3xl:-left-20 left-0 rounded-none 2xl:block hidden;
+  }
+
+  .light-box-slider button.owl-prev {
+    @apply 3xl:-left-20 left-3;
+  }
+
+  .modal {
+    @apply flex fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 justify-center items-center z-[99999];
+  }
+
+  label {
+    @apply text-body text-black-dark_100;
+  }
+
+  label span {
+    @apply text-red;
+  }
+
+  input {
+    @apply border-none outline-none rounded-lg px-8 py-4 bg-blue-dark text-body text-gray-dark_100 font-normal placeholder:text-gray-dark_100 placeholder:text-body placeholder:font-normal;
+  }
+
+  input[type="checkbox"] {
+    @apply w-5 h-5;
+  }
+
+  .accrodind {
+    @apply !shadow-faq_active_shadow;
+  }
+}

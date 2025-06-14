@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-ExtraLight.woff2") format("woff2"),
+    url("Ambit-ExtraLight.woff") format("woff"),
+    url("Ambit-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Bold.woff2") format("woff2"),
+    url("Ambit-Bold.woff") format("woff"),
+    url("Ambit-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Black.woff2") format("woff2"),
+    url("Ambit-Black.woff") format("woff"),
+    url("Ambit-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Regular.woff2") format("woff2"),
+    url("Ambit-Regular.woff") format("woff"),
+    url("Ambit-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-SemiBold.woff2") format("woff2"),
+    url("Ambit-SemiBold.woff") format("woff"),
+    url("Ambit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraLight.woff2") format("woff2"),
+    url("Poppins-ExtraLight.woff") format("woff"),
+    url("Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Bold.woff2") format("woff2"),
+    url("Poppins-Bold.woff") format("woff"),
+    url("Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Black.woff2") format("woff2"),
+    url("Poppins-Black.woff") format("woff"),
+    url("Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Italic.woff2") format("woff2"),
+    url("Poppins-Italic.woff") format("woff"),
+    url("Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Light.woff2") format("woff2"),
+    url("Poppins-Light.woff") format("woff"),
+    url("Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Thin.woff2") format("woff2"),
+    url("Ambit-Thin.woff") format("woff"),
+    url("Ambit-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Light.woff2") format("woff2"),
+    url("Ambit-Light.woff") format("woff"),
+    url("Ambit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraBold.woff2") format("woff2"),
+    url("Poppins-ExtraBold.woff") format("woff"),
+    url("Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("Ambit-Italic.woff2") format("woff2"),
+    url("Ambit-Italic.woff") format("woff"),
+    url("Ambit-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.woff2") format("woff2"),
+    url("Poppins-Regular.woff") format("woff"),
+    url("Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Medium.woff2") format("woff2"),
+    url("Poppins-Medium.woff") format("woff"),
+    url("Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Thin.woff2") format("woff2"),
+    url("Poppins-Thin.woff") format("woff"),
+    url("Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-SemiBold.woff2") format("woff2"),
+    url("Poppins-SemiBold.woff") format("woff"),
+    url("Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

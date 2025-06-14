@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapie</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- font css -->
+    <link rel="stylesheet" href="./font/font.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="fixed w-full top-0 left-0 z-20 bg-white">
+        <div class="container">
+            <div class="h-wrapper flex items-center justify-between gap-6 py-3">
+                <div class="logo">
+                    <a href="./index.html" aria-label="">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="menu flex items-center gap-12">
+                    <nav
+                        class="lg:relative fixed top-0 left-[-1000px] lg:left-0 bg-blue lg:bg-transparent h-screen lg:h-auto lg:w-auto w-[300px] z-30 py-12 px-5 lg:p-0 transition-all duration-500 ease-in-out">
+                        <ul class="flex lg:items-center gap-8 lg:gap-12 lg:flex-row flex-col ">
+                            <li>
+                                <a href="./index.html" aria-label="">HOME</a>
+                            </li>
+                            <li>
+                                <a href="./BEHANDLUNGEN.html" aria-label="">BEHANDLUNGEN</a>
+                            </li>
+                            <li>
+                                <a href="./KURSE.html" aria-label="">KURSE</a>
+                            </li>
+                            <li>
+                                <a href="./UBER_UNS.html" aria-label="">ÜBER UNS</a>
+                            </li>
+                        </ul>
+                        <div class="close-icon lg:hidden absolute top-6 right-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512">
+                                <path
+                                    d="M342.6 150.6a32 32 0 0 0-45.3-45.3L192 210.7 86.6 105.4a32 32 0 0 0-45.3 45.3L146.7 256 41.4 361.4a32 32 0 0 0 45.3 45.3L192 301.3l105.4 105.3a32 32 0 0 0 45.3-45.3L237.3 256l105.3-105.4z"
+                                    fill="#000"></path>
+                            </svg>
+                        </div>
+                    </nav>
+                    <div class="menu-bar flex items-center lg:gap-0 gap-12">
+                        <div class="grd-btn rounded-lg overflow-hidden hidden xsm:block">
+                            <div class="btn-box hidden xsm:block">
+                                <a href="./KONTAKT.html" aria-label="" class="btn">
+                                    KONTAKT SIE UNS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menu-icon lg:hidden">
+                            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="22" width="20"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                    style="fill: #000;"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fixed sm:flex top-1/2 right-0 z-50 -translate-y-1/2 hidden flex-col gap-5">
+        <a href="#" aria-label=""
+            class="fix-box bg-social_gradient py-4 px-5 h-[64px] w-[72px] rounded-tl-[32px] rounded-bl-[32px] flex items-center justify-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3332 2.66667V8.00001" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10.6667 2.66667V8.00001" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H28" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.3333 5.33333H6.66667C5.19333 5.33333 4 6.52666 4 7.99999V25.3333C4 26.8067 5.19333 28 6.66667 28H25.3333C26.8067 28 28 26.8067 28 25.3333V7.99999C28 6.52666 26.8067 5.33333 25.3333 5.33333Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.1333 18.4267L16.08 16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M14.2935 23.3333H17.8668" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M16.0802 16.6667V23.3333" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <a href="#" aria-label=""
+            class="fix-box bg-social_gradient py-4 px-5 h-[64px] w-[72px] rounded-tl-[32px] rounded-bl-[32px] flex items-center justify-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.4745 17.5253C12.9145 15.9653 11.7385 14.2187 10.9572 12.4467C10.7919 12.072 10.8892 11.6333 11.1785 11.344L12.2705 10.2533C13.1652 9.35865 13.1652 8.09332 12.3839 7.31199L10.8185 5.74665C9.7772 4.70532 8.0892 4.70532 7.04787 5.74665L6.17854 6.61599C5.19054 7.60399 4.77854 9.02932 5.0452 10.4427C5.70387 13.9267 7.72787 17.7413 10.9932 21.0067C14.2585 24.272 18.0732 26.296 21.5572 26.9547C22.9705 27.2213 24.3959 26.8093 25.3839 25.8213L26.2519 24.9533C27.2932 23.912 27.2932 22.224 26.2519 21.1827L24.6879 19.6187C23.9065 18.8373 22.6399 18.8373 21.8599 19.6187L20.6559 20.824C20.3665 21.1133 19.9279 21.2107 19.5532 21.0453C17.7812 20.2627 16.0345 19.0853 14.4745 17.5253Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+
+    <button id="back-to-top" aria-label="Back to top"
+        class="fixed bottom-20 sm:bottom-5 right-5 w-12 h-12 p-2 bg-social_gradient text-white rounded-full border-0 cursor-pointer transition-colors duration-300 ease-in-out flex items-center justify-center z-[99999]">
+        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="-rotate-90">
+            <path
+                d="M18.5303 6.94049C18.8232 6.64759 18.8232 6.17272 18.5303 5.87983L13.7574 1.10686C13.4645 0.813962 12.9896 0.813962 12.6967 1.10686C12.4038 1.39975 12.4038 1.87462 12.6967 2.16752L16.9393 6.41016L12.6967 10.6528C12.4038 10.9457 12.4038 11.4206 12.6967 11.7135C12.9896 12.0064 13.4645 12.0064 13.7574 11.7135L18.5303 6.94049ZM0.9 7.16016C1.31421 7.16016 1.65 6.82437 1.65 6.41016C1.65 5.99594 1.31421 5.66016 0.9 5.66016V7.16016ZM2.7 5.66016C2.28579 5.66016 1.95 5.99594 1.95 6.41016C1.95 6.82437 2.28579 7.16016 2.7 7.16016V5.66016ZM4.5 7.16016C4.91421 7.16016 5.25 6.82437 5.25 6.41016C5.25 5.99594 4.91421 5.66016 4.5 5.66016V7.16016ZM6.3 5.66016C5.88579 5.66016 5.55 5.99594 5.55 6.41016C5.55 6.82437 5.88579 7.16016 6.3 7.16016V5.66016ZM8.1 7.16016C8.51421 7.16016 8.85 6.82437 8.85 6.41016C8.85 5.99594 8.51421 5.66016 8.1 5.66016V7.16016ZM9.9 7.16016C9.48579 5.66016 9.15 5.99594 9.15 6.41016C9.15 6.82437 9.48579 7.16016 9.9 7.16016V5.66016ZM11.7 7.16016C12.1142 7.16016 12.45 6.82437 12.45 6.41016C12.45 5.99594 12.1142 5.66016 11.7 5.66016V7.16016ZM13.5 7.16016C13.0858 7.16016 12.75 5.99594 12.75 6.41016C12.75 6.82437 13.0858 7.16016 13.5 7.16016V5.66016ZM15.3 7.16016C15.7142 7.16016 16.05 6.82437 16.05 6.41016C16.05 5.99594 15.7142 5.66016 15.3 5.66016V7.16016ZM17.1 7.16016C16.6858 7.16016 16.35 5.99594 16.35 6.41016C16.35 6.82437 16.6858 7.16016 17.1 7.16016V5.66016ZM0 7.16016H0.9V5.66016H0V7.16016ZM2.7 7.16016H4.5V5.66016H2.7V7.16016ZM6.3 7.16016H8.1V5.66016H6.3V7.16016ZM9.9 7.16016H11.7V5.66016H9.9V7.16016ZM13.5 7.16016H15.3V5.66016H13.5V7.16016ZM17.1 7.16016H18V5.66016H17.1V7.16016Z"
+                fill="white"></path>
+        </svg>
+    </button>
+
+    <div class="mobile fixed bottom-0 w-full left-0 z-50 flex items-stretch sm:hidden">
+        <a href="#" aria-label=""
+            class="fix-box bg-social_gradient py-3 px-5 last:border-r-0 border-r-2 border-solid border-white w-1/2 flex items-center justify-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3332 2.66667V8.00001" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10.6667 2.66667V8.00001" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H28" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.3333 5.33333H6.66667C5.19333 5.33333 4 6.52666 4 7.99999V25.3333C4 26.8067 5.19333 28 6.66667 28H25.3333C26.8067 28 28 26.8067 28 25.3333V7.99999C28 6.52666 26.8067 5.33333 25.3333 5.33333Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.1333 18.4267L16.08 16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M14.2935 23.3333H17.8668" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M16.0802 16.6667V23.3333" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#" aria-label=""
+            class="fix-box bg-social_gradient py-3 px-5 last:border-r-0 border-r-2 border-solid border-white w-1/2 flex items-center justify-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.4745 17.5253C12.9145 15.9653 11.7385 14.2187 10.9572 12.4467C10.7919 12.072 10.8892 11.6333 11.1785 11.344L12.2705 10.2533C13.1652 9.35865 13.1652 8.09332 12.3839 7.31199L10.8185 5.74665C9.7772 4.70532 8.0892 4.70532 7.04787 5.74665L6.17854 6.61599C5.19054 7.60399 4.77854 9.02932 5.0452 10.4427C5.70387 13.9267 7.72787 17.7413 10.9932 21.0067C14.2585 24.272 18.0732 26.296 21.5572 26.9547C22.9705 27.2213 24.3959 26.8093 25.3839 25.8213L26.2519 24.9533C27.2932 23.912 27.2932 22.224 26.2519 21.1827L24.6879 19.6187C23.9065 18.8373 22.6399 18.8373 21.8599 19.6187L20.6559 20.824C20.3665 21.1133 19.9279 21.2107 19.5532 21.0453C17.7812 20.2627 16.0345 19.0853 14.4745 17.5253Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+    <main>
+        <section class="hero pt-32 relative">
+            <div class="container">
+                <div class="hero-wrapper flex items-center flex-wrap lg:flex-row flex-col-reverse">
+                    <div class="hero-text space-y-5 lg:space-y-8 lg:w-1/2 lg:pr-5 lg:py-10 py-8">
+                        <h1 class="text-h1 text-black"><span class="bg-h1_gradient_text gradient_text">Stärkung Ihrer
+                                Genesung</span> -
+                            ein Schritt nach dem anderen</h1>
+                        <ul class="lg:space-y-6 space-y-4">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua.</li>
+                        </ul>
+                        <div class="grd-btn rounded-lg overflow-hidden">
+                            <div class="btn-box">
+                                <a href="#" aria-label="" class="btn">
+                                    TERMIN BUCHEN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img md:w-1/2 sm:w-3/4">
+                        <img src="./img/kurse.png" alt="hero image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 bg-blue">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    </h2>
+                </div>
+                <div class="owl-carousel logo-slider pt-10">
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-1.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-2.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-1.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-2.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-3.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-4.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-1.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" aria-label="">
+                            <img src="./img/logo-2.png" alt="Slide 1"
+                                class="aspect-[3/2] object-contain !w-[120px] mx-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 odd:bg-white even:bg-blue">
+            <div class="container">
+                <div class="about-wrapper flex gap-5 lg:gap-10 xl:gap-14 2xl:gap-20 items-center flex-wrap">
+                    <div class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)]">
+                        <img src="./img/kurse-1.png" alt="about-1" class="rounded-3xl">
+                    </div>
+                    <div
+                        class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)] space-y-6 lg:space-y-8 ">
+                        <div class="title text-left max-w-[580px]">
+                            <h2
+                                class="text-h2 text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </h2>
+                        </div>
+                        <div class="text-p text-black-text_light space-y-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in</p>
+                        </div>
+                        <ul class="space-y-4 max-w-[600px]">
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                        </ul>
+                        <div class="grd-btn rounded-lg overflow-hidden">
+                            <div class="btn-box">
+                                <a href="#" aria-label="" class="b-btn">TERMIN BUCHEN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 odd:bg-white even:bg-blue">
+            <div class="container">
+                <div class="about-wrapper flex gap-5 lg:gap-10 xl:gap-14 2xl:gap-20 items-center flex-wrap">
+                    <div
+                        class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)] space-y-6 lg:space-y-8 ">
+                        <div class="title text-left max-w-[580px]">
+                            <h2
+                                class="text-h2 text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </h2>
+                        </div>
+                        <div class="text-p text-black-text_light space-y-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in</p>
+                        </div>
+                        <ul class="space-y-4 max-w-[600px]">
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                        </ul>
+                        <div class="grd-btn rounded-lg overflow-hidden">
+                            <div class="btn-box">
+                                <a href="#" aria-label="" class="b-btn">TERMIN BUCHEN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)]">
+                        <img src="./img/kurse-2.png" alt="about-1" class="rounded-3xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 odd:bg-white even:bg-blue">
+            <div class="container">
+                <div class="about-wrapper flex gap-5 lg:gap-10 xl:gap-14 2xl:gap-20 items-center flex-wrap">
+                    <div class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)]">
+                        <img src="./img/kurse-3.png" alt="about-1" class="rounded-3xl">
+                    </div>
+                    <div
+                        class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)] space-y-6 lg:space-y-8 ">
+                        <div class="title text-left max-w-[580px]">
+                            <h2
+                                class="text-h2 text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </h2>
+                        </div>
+                        <div class="text-p text-black-text_light space-y-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in</p>
+                        </div>
+                        <ul class="space-y-4 max-w-[600px]">
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                        </ul>
+                        <div class="grd-btn rounded-lg overflow-hidden">
+                            <div class="btn-box">
+                                <a href="#" aria-label="" class="b-btn">TERMIN BUCHEN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 odd:bg-white even:bg-blue">
+            <div class="container">
+                <div class="about-wrapper flex gap-5 lg:gap-10 xl:gap-14 2xl:gap-20 items-center flex-wrap">
+                    <div
+                        class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)] space-y-6 lg:space-y-8 ">
+                        <div class="title text-left max-w-[580px]">
+                            <h2
+                                class="text-h2 text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </h2>
+                        </div>
+                        <div class="text-p text-black-text_light space-y-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in</p>
+                        </div>
+                        <ul class="space-y-4 max-w-[600px]">
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                            <li>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc.
+                                Aliquam erat vo</li>
+                        </ul>
+                        <div class="grd-btn rounded-lg overflow-hidden">
+                            <div class="btn-box">
+                                <a href="#" aria-label="" class="b-btn">TERMIN BUCHEN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[calc(50%-20px)] xl:w-[calc(50%-28px)] 2xl:w-[calc(50%-40px)]">
+                        <img src="./img/kurse-4.png" alt="about-1" class="rounded-3xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    </h2>
+                </div>
+
+                <div
+                    class="relative after:content-[''] after:w-[90%] after:left-1/2 after:-translate-x-1/2 after:top-[60%] after:-translate-y-1/2 after:h-[1px] after:border-[1px] after:border-dotted after:border-gray-dark after:absolute">
+                    <div class="owl-carousel service-slider pt-10">
+                        <div class="item m-2 bg-white shadow-box_shadow p-6 rounded-3xl flex flex-col gap-6">
+                            <div
+                                class="icon w-[100px] h-[100px] rounded-full shadow-box_shadow mx-auto p-3 flex items-center justify-center">
+                                <img src="./img/body.svg" alt="service" class="w-10 h-10 object-contain">
+                            </div>
+                            <div class="flex flex-col space-y-3 text-center">
+                                <h3 class="text-h3 text-gary-dark">Lorem Ipsum</h3>
+                                <div class="text-p text-black-light space-y-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-2 bg-white shadow-box_shadow p-6 rounded-3xl flex flex-col gap-6">
+                            <div
+                                class="icon w-[100px] h-[100px] rounded-full shadow-box_shadow mx-auto p-3 flex items-center justify-center">
+                                <img src="./img/human.svg" alt="service" class="w-10 h-10 object-contain">
+                            </div>
+                            <div class="flex flex-col space-y-3 text-center">
+                                <h3 class="text-h3 text-gary-dark">Lorem Ipsum</h3>
+                                <div class="text-p text-black-light space-y-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-2 bg-white shadow-box_shadow p-6 rounded-3xl flex flex-col gap-6">
+                            <div
+                                class="icon w-[100px] h-[100px] rounded-full shadow-box_shadow mx-auto p-3 flex items-center justify-center">
+                                <img src="./img/hand.svg" alt="service" class="w-10 h-10 object-contain">
+                            </div>
+                            <div class="flex flex-col space-y-3 text-center">
+                                <h3 class="text-h3 text-gary-dark">Lorem Ipsum</h3>
+                                <div class="text-p text-black-light space-y-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-2 bg-white shadow-box_shadow p-6 rounded-3xl flex flex-col gap-6">
+                            <div
+                                class="icon w-[100px] h-[100px] rounded-full shadow-box_shadow mx-auto p-3 flex items-center justify-center">
+                                <img src="./img/mind.svg" alt="service" class="w-10 h-10 object-contain">
+                            </div>
+                            <div class="flex flex-col space-y-3 text-center">
+                                <h3 class="text-h3 text-gary-dark">Lorem Ipsum</h3>
+                                <div class="text-p text-black-light space-y-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:pt-24 sm:pt-12 pt-10">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Was unsere geliebten Kunden sagen
+                    </h2>
+                    <div class="text-p text-black-text_light space-y-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in</p>
+                    </div>
+                </div>
+
+                <div class="review pt-10">
+                    <img src="./img/review.png" alt="review">
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 bg-blue">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    </h2>
+                    <div class="text-p text-black-text_light space-y-4 pt-2">
+                        <p>In unserer Physiotherapie-Praxis setzen wir uns dafür ein, dass Sie wieder zu Kräften kommen,
+                            Ihre Mobilität verbessern
+                            und ein schmerzfreies Leben führen können.</p>
+                    </div>
+                    <div class="grd-btn rounded-lg overflow-hidden mx-auto">
+                        <div class="btn-box mx-auto">
+                            <a href="#" aria-label="" class="btn">TERMIN VEREINBAREN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:pt-24 sm:pt-12 pt-10">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    </h2>
+                </div>
+            </div>
+            <div class="team mt-14 bg-team_bg h-[520px] lg:h-[600px] sxl:h-[700px] bg-center bg-no-repeat bg-cover">
+                <div class="owl-carousel team-slider">
+                    <div
+                        class="item relative h-[520px] lg:h-[600px] sxl:h-[700px] border-r-[1px] border-solid border-transparent xsm:border-white group hover:bg-team_box_bg">
+                        <div
+                            class="content flex flex-col transition-all duration-500 ease-in-out absolute w-full px-4 smxl:px-6 py-10 smxl:top-[55%] left-0 top-[45%] lg:top-[50%] group-hover:top-[20%] lg:group-hover:top-[35%] smxl:group-hover:top-[40%] min-h-[400px]">
+                            <div class="team-title min-h-[80px]">
+                                <h3 class="text-h3 text-white">Maßgeschneiderte Pflege</h3>
+                            </div>
+                            <div class="text-p text-white space-y-4 flex-1">
+                                <p>In unserer Physiotherapie-Praxis legen wir Wert auf eine maßgeschneiderte
+                                    Behandlung, die Ihren individuellen
+                                    Bedürfnissen und Zielen gerecht wird.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="item relative h-[520px] lg:h-[600px] sxl:h-[700px] border-r-[1px] border-solid border-transparent xsm:border-white group hover:bg-team_box_bg">
+                        <div
+                            class="content flex flex-col transition-all duration-500 ease-in-out absolute w-full px-4 smxl:px-6 py-10 smxl:top-[55%] left-0 top-[45%] lg:top-[50%] group-hover:top-[20%] lg:group-hover:top-[35%] smxl:group-hover:top-[40%] min-h-[400px]">
+                            <div class="team-title min-h-[80px]">
+                                <h3 class="text-h3 text-white">Weg zum Wohlbefinden</h3>
+                            </div>
+                            <div class="text-p text-white space-y-4 flex-1">
+                                <p>Begeben Sie sich mit der Physiotherapie auf den Weg zu Ihrem Wohlbefinden.
+                                    Persönliche Betreuung und fachkundige
+                                    Anleitung führen Sie zu einem gesünderen, schmerzfreien Leben.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="item relative h-[520px] lg:h-[600px] sxl:h-[700px] border-r-[1px] border-solid border-transparent xsm:border-white group hover:bg-team_box_bg">
+                        <div
+                            class="content flex flex-col transition-all duration-500 ease-in-out absolute w-full px-4 smxl:px-6 py-10 smxl:top-[55%] left-0 top-[45%] lg:top-[50%] group-hover:top-[20%] lg:group-hover:top-[35%] smxl:group-hover:top-[40%] min-h-[400px]">
+                            <div class="team-title min-h-[80px]">
+                                <h3 class="text-h3 text-white">Schneller erholen</h3>
+                            </div>
+                            <div class="text-p text-white space-y-4 flex-1">
+                                <p>Erholen Sie sich schneller mit gezielten physiotherapeutischen Behandlungen, die
+                                    darauf abzielen, Ihren Körper zu
+                                    heilen, zu stärken und sein volles Potenzial wiederherzustellen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="item relative h-[520px] lg:h-[600px] sxl:h-[700px] border-r-[1px] border-solid border-transparent xsm:border-white group hover:bg-team_box_bg">
+                        <div
+                            class="content flex flex-col transition-all duration-500 ease-in-out absolute w-full px-4 smxl:px-6 py-10 smxl:top-[55%] left-0 top-[45%] lg:top-[50%] group-hover:top-[20%] lg:group-hover:top-[35%] smxl:group-hover:top-[40%] min-h-[400px]">
+                            <div class="team-title min-h-[80px]">
+                                <h3 class="text-h3 text-white">Schmerzfrei leben</h3>
+                            </div>
+                            <div class="text-p text-white space-y-4 flex-1">
+                                <p>Mith Physiotherapie, wo individuelle Behandlungen Ihnen helfen, Ihre Mobilität
+                                    wiederzuerlangen, Beschwerden zu lindern
+                                    und das Leben in vollen Zügen zu genießen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:py-24 sm:py-12 py-10 bg-blue">
+            <div class="container">
+                <div class="title text-center space-y-9">
+                    <h2
+                        class="text-h2 max-w-[700px] mx-auto text-black-dark relative after:content-[''] after:absolute after:w-[102px] after:h-1 after:bg-border_gradient after:-bottom-3 after:left-1/2 after:-translate-x-1/2 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    </h2>
+                </div>
+                <div class="faq pt-10 space-y-5">
+                    <div
+                        class="accrodind rounded-xl bg-blue-light border-[1.2px] border-solid shadow-faq_shadow border-gary-vlight cursor-pointer opacity-70">
+                        <div class="tilte px-6 pt-6 mb-6 flex gap-3 items-center justify-between">
+                            <h3 class="text-body text-black-normal">Wie kann ich mich
+                                anmelden?</h3>
+                            <div class="icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0001 3.73779C12.6628 3.73779 13.2001 4.27505 13.2001 4.93779L13.2001 10.9378L19.2001 10.9378C19.8628 10.9378 20.4001 11.4751 20.4001 12.1378C20.4001 12.8005 19.8628 13.3378 19.2001 13.3378H13.2001V19.3378C13.2001 20.0005 12.6628 20.5378 12.0001 20.5378C11.3374 20.5378 10.8001 20.0005 10.8001 19.3378L10.8001 13.3378L4.8001 13.3378C4.13736 13.3378 3.6001 12.8005 3.6001 12.1378C3.6001 11.4751 4.13736 10.9378 4.8001 10.9378L10.8001 10.9378V4.93779C10.8001 4.27505 11.3374 3.73779 12.0001 3.73779Z"
+                                        fill="#0A0A0A" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ans ml-6 mt-6 hidden pb-6">
+                            <div
+                                class="text-black-light text-p space-y-4 px-6 relative border-l-2 border-solid faq_border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum
+                                    consequat gravid Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid
+                                    Lorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur nec ex non ipsum consequat gravid</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accrodind rounded-xl bg-blue-light border-[1.2px] border-solid shadow-faq_shadow border-gary-vlight cursor-pointer opacity-70">
+                        <div class="tilte px-6 pt-6 mb-6 flex gap-3 items-center justify-between">
+                            <h3 class="text-body text-black-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur nec ex non ipsum consequat gravid</h3>
+                            <div class="icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0001 3.73779C12.6628 3.73779 13.2001 4.27505 13.2001 4.93779L13.2001 10.9378L19.2001 10.9378C19.8628 10.9378 20.4001 11.4751 20.4001 12.1378C20.4001 12.8005 19.8628 13.3378 19.2001 13.3378H13.2001V19.3378C13.2001 20.0005 12.6628 20.5378 12.0001 20.5378C11.3374 20.5378 10.8001 20.0005 10.8001 19.3378L10.8001 13.3378L4.8001 13.3378C4.13736 13.3378 3.6001 12.8005 3.6001 12.1378C3.6001 11.4751 4.13736 10.9378 4.8001 10.9378L10.8001 10.9378V4.93779C10.8001 4.27505 11.3374 3.73779 12.0001 3.73779Z"
+                                        fill="#0A0A0A" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ans ml-6 mt-6 hidden pb-6">
+                            <div
+                                class="text-black-light text-p space-y-4 px-6 relative border-l-2 border-solid faq_border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum
+                                    consequat gravid Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid
+                                    Lorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur nec ex non ipsum consequat gravid</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accrodind rounded-xl bg-blue-light border-[1.2px] border-solid shadow-faq_shadow border-gary-vlight cursor-pointer opacity-70">
+                        <div class="tilte px-6 pt-6 mb-6 flex gap-3 items-center justify-between">
+                            <h3 class="text-body text-black-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur nec ex non ipsum consequat gravid</h3>
+                            <div class="icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0001 3.73779C12.6628 3.73779 13.2001 4.27505 13.2001 4.93779L13.2001 10.9378L19.2001 10.9378C19.8628 10.9378 20.4001 11.4751 20.4001 12.1378C20.4001 12.8005 19.8628 13.3378 19.2001 13.3378H13.2001V19.3378C13.2001 20.0005 12.6628 20.5378 12.0001 20.5378C11.3374 20.5378 10.8001 20.0005 10.8001 19.3378L10.8001 13.3378L4.8001 13.3378C4.13736 13.3378 3.6001 12.8005 3.6001 12.1378C3.6001 11.4751 4.13736 10.9378 4.8001 10.9378L10.8001 10.9378V4.93779C10.8001 4.27505 11.3374 3.73779 12.0001 3.73779Z"
+                                        fill="#0A0A0A" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ans ml-6 mt-6 hidden pb-6">
+                            <div
+                                class="text-black-light text-p space-y-4 px-6 relative border-l-2 border-solid faq_border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum
+                                    consequat gravid Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid
+                                    Lorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur nec ex non ipsum consequat gravid</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accrodind rounded-xl bg-blue-light border-[1.2px] border-solid shadow-faq_shadow border-gary-vlight cursor-pointer opacity-70">
+                        <div class="tilte px-6 pt-6 mb-6 flex gap-3 items-center justify-between">
+                            <h3 class="text-body text-black-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur nec ex non ipsum consequat gravid</h3>
+                            <div class="icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0001 3.73779C12.6628 3.73779 13.2001 4.27505 13.2001 4.93779L13.2001 10.9378L19.2001 10.9378C19.8628 10.9378 20.4001 11.4751 20.4001 12.1378C20.4001 12.8005 19.8628 13.3378 19.2001 13.3378H13.2001V19.3378C13.2001 20.0005 12.6628 20.5378 12.0001 20.5378C11.3374 20.5378 10.8001 20.0005 10.8001 19.3378L10.8001 13.3378L4.8001 13.3378C4.13736 13.3378 3.6001 12.8005 3.6001 12.1378C3.6001 11.4751 4.13736 10.9378 4.8001 10.9378L10.8001 10.9378V4.93779C10.8001 4.27505 11.3374 3.73779 12.0001 3.73779Z"
+                                        fill="#0A0A0A" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ans ml-6 mt-6 hidden pb-6">
+                            <div
+                                class="text-black-light text-p space-y-4 px-6 relative border-l-2 border-solid faq_border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum
+                                    consequat gravid Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid
+                                    Lorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur nec ex non ipsum consequat gravid</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accrodind rounded-xl bg-blue-light border-[1.2px] border-solid shadow-faq_shadow border-gary-vlight cursor-pointer opacity-70">
+                        <div class="tilte px-6 pt-6 mb-6 flex gap-3 items-center justify-between">
+                            <h3 class="text-body text-black-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur nec ex non ipsum consequat gravid</h3>
+                            <div class="icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0001 3.73779C12.6628 3.73779 13.2001 4.27505 13.2001 4.93779L13.2001 10.9378L19.2001 10.9378C19.8628 10.9378 20.4001 11.4751 20.4001 12.1378C20.4001 12.8005 19.8628 13.3378 19.2001 13.3378H13.2001V19.3378C13.2001 20.0005 12.6628 20.5378 12.0001 20.5378C11.3374 20.5378 10.8001 20.0005 10.8001 19.3378L10.8001 13.3378L4.8001 13.3378C4.13736 13.3378 3.6001 12.8005 3.6001 12.1378C3.6001 11.4751 4.13736 10.9378 4.8001 10.9378L10.8001 10.9378V4.93779C10.8001 4.27505 11.3374 3.73779 12.0001 3.73779Z"
+                                        fill="#0A0A0A" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ans ml-6 mt-6 hidden pb-6">
+                            <div
+                                class="text-black-light text-p space-y-4 px-6 relative border-l-2 border-solid faq_border">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum
+                                    consequat gravid Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid
+                                    Lorem
+                                    ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Curabitur nec ex non ipsum consequat gravid Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur nec ex non ipsum consequat gravid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shadow-footer_shadow sm:mb-0 mb-[56px]">
+        <div class="container">
+            <div class="f-wrapper md:py-14 py-10 lg:py-16 flex items-stretch gap-8 flex-wrap">
+                <div
+                    class="logo w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-full sxl:w-[calc(10.66%-27px)]">
+                    <a href="./index.html" aria-label=""><img src="./img/logo.svg" alt="logo"
+                            class="w-[166px] xl:mx-auto"></a>
+                </div>
+                <div
+                    class="f-fild space-y-8 w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-[calc(22.335%-26px)] sxl:w-[calc(19.66%-27px)]">
+                    <div class="space-y-6">
+                        <div class="title text-p text-black-dark font-semibold">
+                            <p>Kontakt</p>
+                        </div>
+                        <div class="space-y-5">
+                            <div class="list text-p text-black-text_light flex items-start gap-2">
+                                <svg class="flex-none" width="19" height="27" viewBox="0 0 19 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_322_223)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.64179 4.42586C7.20295 4.64333 5.95838 5.25801 4.91136 6.26829C3.9029 7.24138 3.26351 8.40382 2.97052 9.79685C2.84702 10.3839 2.81576 11.37 2.90126 11.9804C3.23866 14.3892 4.96708 17.4245 7.85703 20.6833C8.0885 20.9443 8.5468 21.4308 8.8754 21.7644C9.43287 22.3302 9.4815 22.3708 9.60152 22.3708C9.72193 22.3708 9.77062 22.3296 10.3599 21.7292C12.4556 19.594 14.2987 17.0914 15.3116 15.0056C16.0215 13.5436 16.3481 12.319 16.3496 11.1132C16.3518 9.33363 15.6997 7.72418 14.4528 6.43191C13.48 5.4238 12.3209 4.78603 10.9242 4.49051C10.5596 4.41338 10.3856 4.39815 9.74088 4.38701C9.19441 4.37759 8.88992 4.38835 8.64179 4.42586ZM9.22718 8.06453C8.86918 8.10745 8.36194 8.28042 8.0358 8.47079C7.65882 8.69084 7.17029 9.17937 6.95024 9.55635C6.39544 10.5068 6.39109 11.697 6.93889 12.665C7.12462 12.9932 7.55159 13.4485 7.88066 13.6692C8.71752 14.2307 9.79787 14.3495 10.7334 13.9828C11.3154 13.7548 11.9358 13.2241 12.2503 12.6853C12.8043 11.7361 12.8086 10.5431 12.2616 9.57663C12.071 9.23987 11.6308 8.77479 11.2924 8.5526C10.7006 8.16409 9.92513 7.98086 9.22718 8.06453Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_322_223">
+                                            <rect width="18" height="18" fill="white"
+                                                transform="translate(0.600098 4.1377)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Lorem ipsum dolor sit, amet, consectetur, adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="list text-p text-black-text_light flex items-start gap-2">
+                                <svg class="flex-none" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.07995 1.76712C4.37449 2.24673 2.6832 4.19255 2.03581 5.26946C1.8155 5.63591 1.80449 5.75544 1.93066 6.40919C2.73214 10.5625 7.01851 15.6922 11.6009 17.9822C12.9123 18.6375 14.2065 19.0573 15.0727 19.1083L15.3852 19.1267L15.6829 18.9499C16.4927 18.469 18.0876 17.1476 18.8381 16.3357C19.6084 15.5026 19.554 15.3105 18.3149 14.4854C17.2775 13.7947 15.93 13.0131 15.3212 12.749C14.586 12.4301 14.5688 12.4384 13.5999 13.5738C13.3523 13.8638 13.1076 14.1398 13.056 14.1871L12.9623 14.2732L12.6503 14.1816C12.158 14.0371 11.8287 13.9018 11.3034 13.6279C9.88699 12.8897 8.73734 11.865 7.87394 10.5713C7.47632 9.97556 7.05738 9.13294 6.85449 8.52079L6.688 8.0186L6.77878 7.91974C6.82874 7.86536 7.10691 7.61837 7.39695 7.37083C8.33191 6.57294 8.44312 6.43681 8.39679 6.14704C8.34101 5.79806 7.79292 4.7338 7.0716 3.57376C5.85499 1.61724 5.61745 1.40173 5.07995 1.76712ZM11.2251 2.24075V2.86087L11.3471 2.88528C11.4143 2.89872 11.5681 2.90978 11.6889 2.90985C11.8098 2.90993 12.0757 2.93681 12.2798 2.96954C14.6744 3.3538 16.6673 4.9388 17.5826 7.18704C17.8531 7.85146 18.0601 8.76708 18.0608 9.3013C18.0609 9.41142 18.072 9.55642 18.0854 9.62357L18.1098 9.74564H18.73H19.3501V9.44189C19.3501 8.55771 19.0768 7.38169 18.6484 6.42204C17.854 4.64259 16.3576 3.13763 14.5844 2.33478C13.6431 1.90857 12.4112 1.62064 11.5288 1.62064H11.2251V2.24075ZM11.2251 5.36825V5.99083L11.4106 6.01368C12.1757 6.10782 12.5482 6.21419 13.0156 6.47189C13.9625 6.99392 14.6601 7.93267 14.8741 8.97251C14.9081 9.1381 14.936 9.32485 14.936 9.38755C14.936 9.45021 14.947 9.55642 14.9604 9.62357L14.9848 9.74564H15.605H16.2251V9.49685C16.2251 8.96482 15.9964 8.07505 15.7151 7.51239C15.2529 6.58814 14.3826 5.71778 13.4583 5.25564C12.8957 4.97431 12.0059 4.74564 11.4739 4.74564H11.2251V5.36825Z"
+                                        fill="black" />
+                                </svg>
+                                <a href="tel:+12766594568">(+12)7 66 59 45 68</a>
+                            </div>
+                            <div class="list text-p text-black-text_light flex items-start gap-2">
+                                <svg class="flex-none" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_322_232)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.90869 3.3841C1.84424 3.40527 1.75068 3.43926 1.7008 3.45961C1.61654 3.49394 1.91615 3.80465 5.89666 7.81047C8.36717 10.2967 10.2343 12.1459 10.3038 12.1753C10.4655 12.2436 10.7877 12.2352 10.9321 12.1589C11.0943 12.0733 19.5955 3.50715 19.5477 3.47758C19.3236 3.3391 19.3979 3.34023 10.5806 3.34297C5.07393 3.34469 1.98412 3.35933 1.90869 3.3841ZM0.725371 4.42344C0.703145 4.48254 0.66584 4.59062 0.64252 4.66363C0.612832 4.7566 0.600098 6.46789 0.600098 10.3689C0.600098 15.9198 0.60041 15.9424 0.681816 16.1834C0.726738 16.3165 0.775098 16.4253 0.789238 16.4251C0.803379 16.4249 2.16553 15.0626 3.81619 13.3978L6.81748 10.3707L3.81619 7.34355C2.16553 5.67863 0.803887 4.31633 0.790371 4.31621C0.776895 4.31609 0.747637 4.36433 0.725371 4.42344ZM17.3831 7.34523L14.381 10.3708L17.3781 13.3883C19.0266 15.048 20.3888 16.4111 20.4054 16.4175C20.4219 16.4239 20.4725 16.3194 20.5178 16.1853C20.6 15.9418 20.6001 15.9333 20.6001 10.3707C20.6001 4.8216 20.5998 4.79898 20.5184 4.55797C20.4735 4.42488 20.4251 4.31683 20.411 4.31785C20.3968 4.31887 19.0343 5.68117 17.3831 7.34523ZM4.61107 14.2187C2.73768 16.1035 1.62732 17.2482 1.65557 17.2657C1.87361 17.4005 1.90982 17.401 10.6001 17.401C17.8623 17.401 19.1268 17.3929 19.3071 17.3449C19.4231 17.314 19.5313 17.2747 19.5476 17.2575C19.564 17.2403 18.2241 15.8657 16.5701 14.2028L13.5629 11.1795L12.6187 12.1186C11.6235 13.1082 11.5029 13.2001 11.0418 13.3202C10.6192 13.4303 10.1737 13.3795 9.76025 13.1742C9.57158 13.0805 9.34283 12.8758 8.58736 12.1245C8.07115 11.6111 7.64049 11.193 7.63033 11.1953C7.62014 11.1977 6.26147 12.5582 4.61107 14.2187Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_322_232">
+                                            <rect width="20" height="20" fill="white"
+                                                transform="translate(0.600098 0.137695)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="mailto:Lorem ipsum@gmail.com">Lorem ipsum@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icon flex items-center gap-4">
+                        <a href="#" aria-label=""
+                            class="icon h-9 w-9 rounded-full bg-social_gradient flex items-center justify-center">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.6001 4.37061C8.65009 4.37061 4.6001 8.42783 4.6001 13.4248C4.6001 17.9429 7.89409 21.6929 12.1961 22.3706V16.0453H9.91009V13.4248H12.1961V11.4278C12.1961 9.15976 13.5371 7.91277 15.5981 7.91277C16.5791 7.91277 17.6051 8.08446 17.6051 8.08446V10.3164H16.4711C15.3551 10.3164 15.0041 11.0122 15.0041 11.726V13.4248H17.5061L17.1011 16.0453H15.0041V22.3706C17.1249 22.0343 19.0561 20.9479 20.449 19.3074C21.842 17.6669 22.6049 15.5805 22.6001 13.4248C22.6001 8.42783 18.5501 4.37061 13.6001 4.37061Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label=""
+                            class="icon h-9 w-9 rounded-full bg-social_gradient flex items-center justify-center">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.6001 10.1933C12.7562 10.1933 11.9468 10.528 11.3501 11.1238C10.7533 11.7195 10.4181 12.5275 10.4181 13.3701C10.4181 14.2126 10.7533 15.0206 11.3501 15.6164C11.9468 16.2121 12.7562 16.5468 13.6001 16.5468C14.4441 16.5468 15.2534 16.2121 15.8502 15.6164C16.4469 15.0206 16.7822 14.2126 16.7822 13.3701C16.7822 12.5275 16.4469 11.7195 15.8502 11.1238C15.2534 10.528 14.4441 10.1933 13.6001 10.1933Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.47946 4.65307C11.8828 4.27645 15.3174 4.27645 18.7208 4.65307C20.5801 4.86029 22.0791 6.3216 22.2974 8.18464C22.701 11.6299 22.701 15.1103 22.2974 18.5555C22.0791 20.4186 20.5801 21.8799 18.7218 22.0881C15.3181 22.4648 11.8831 22.4648 8.47946 22.0881C6.62017 21.8799 5.12117 20.4186 4.90284 18.5565C4.49918 15.111 4.49918 11.6302 4.90284 8.18464C5.12117 6.3216 6.62017 4.86029 8.47946 4.65307ZM18.4956 7.5053C18.2359 7.5053 17.9869 7.60829 17.8033 7.79159C17.6196 7.9749 17.5165 8.22353 17.5165 8.48277C17.5165 8.742 17.6196 8.99063 17.8033 9.17394C17.9869 9.35724 18.2359 9.46023 18.4956 9.46023C18.7553 9.46023 19.0043 9.35724 19.1879 9.17394C19.3715 8.99063 19.4747 8.742 19.4747 8.48277C19.4747 8.22353 19.3715 7.9749 19.1879 7.79159C19.0043 7.60829 18.7553 7.5053 18.4956 7.5053ZM8.94943 13.3701C8.94943 12.1387 9.43941 10.9577 10.3116 10.087C11.1838 9.2163 12.3667 8.72713 13.6001 8.72713C14.8336 8.72713 16.0165 9.2163 16.8887 10.087C17.7608 10.9577 18.2508 12.1387 18.2508 13.3701C18.2508 14.6015 17.7608 15.7824 16.8887 16.6531C16.0165 17.5239 14.8336 18.013 13.6001 18.013C12.3667 18.013 11.1838 17.5239 10.3116 16.6531C9.43941 15.7824 8.94943 14.6015 8.94943 13.3701Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="f-fild space-y-6 w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-[calc(22.335%-26px)] sxl:w-[calc(19.66%-27px)]">
+                    <div class="title text-p text-black-dark font-semibold">
+                        <p>Kontakt</p>
+                    </div>
+                    <div class="space-y-5">
+                        <div class="list text-p text-black-text_light flex items-center">
+                            <span class="w-1/2">Montag:</span>
+                            <span class="w-1/2">8:00–17:00</span>
+                        </div>
+                        <div class="list text-p text-black-text_light flex items-center">
+                            <span class="w-1/2">Dienstag:</span>
+                            <span class="w-1/2">8:00–17:00</span>
+                        </div>
+                        <div class="list text-p text-black-text_light flex items-center">
+                            <span class="w-1/2">Mittwoch:</span>
+                            <span class="w-1/2">8:00–17:00</span>
+                        </div>
+                        <div class="list text-p text-black-text_light flex items-center">
+                            <span class="w-1/2">Donnerstag:</span>
+                            <span class="w-1/2">8:00–17:00</span>
+                        </div>
+                        <div class="list text-p text-black-text_light flex items-center">
+                            <span class="w-1/2">Freitag:</span>
+                            <span class="w-1/2">8:00–17:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="f-fild space-y-6 w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-[calc(22.335%-26px)] sxl:w-[calc(19.66%-27px)]">
+                    <div class="title text-p text-black-dark font-semibold">
+                        <p>Navigation</p>
+                    </div>
+                    <ul class="space-y-5">
+                        <li><a href="./BEHANDLUNGEN.html">Behandlungen</a></li>
+                        <li><a href="./KURSE.html">Kurse</a></li>
+                        <li><a href="./UBER_UNS.html">Über uns</a></li>
+                        <li><a href="./KONTAKT.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-6 w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-[calc(22.335%-26px)] sxl:w-[calc(19.66%-27px)]">
+                    <div class="title text-p text-black-dark font-semibold">
+                        <p>Rechtliches</p>
+                    </div>
+                    <ul class="space-y-5">
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutzerklärung</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-4 w-full sm:w-[calc(50%-16px)] smd:w-[calc(33.33%-22px)] xl:w-[calc(10.66%-26px)] flex flex-col  gap-5 xl:items-end">
+                    <a href="#" aria-label=""><img src="./img/f-1.png" alt="footer" class="rounded-xl w-[150px]"></a>
+                    <a href="#" aria-label=""><img src="./img/f-2.png" alt="footer" class="rounded-xl w-[150px]"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cp-right bg-copy_right py-4 lg:py-6">
+            <div class="containier">
+                <div class="text-p text-white font-semibold text-center">
+                    <p>Copyright © 2024 Physiotherapie - MOBILITATSWERK</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--  -->
+    <script src="./js/script.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".logo-slider").owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    375: {
+                        items: 2
+                    },
+                    600: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 6
+                    }
+                }
+            });
+            $(".team-slider").owlCarousel({
+                items: 4,
+                loop: true,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1281: {
+                        items: 4
+                    }
+                }
+            });
+            $(".service-slider").owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    991: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
